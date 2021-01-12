@@ -19,3 +19,4 @@ There are two arguments to be passed to `scanf()`
   int val;
   scanf("%d",&val);
 ```
+Here, **&** in `&val` is used to refer to the pointer address of the variable `val`
