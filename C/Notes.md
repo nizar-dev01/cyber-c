@@ -1,3 +1,4 @@
-# String
+## String
 ### Passing as function arguments
-    printf("Hello %s","Again\n");
+Strings can be passed as `printf("Hello %s","Again\n");`
+Integers can be passed aas `printf("%d",10+20);`
