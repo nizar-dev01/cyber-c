@@ -1,4 +1,4 @@
-### Function Arguments
+### Passing Values to `printf()`
 Strings can be passed as
 ```c
   printf("Hello %s","Again\n");
