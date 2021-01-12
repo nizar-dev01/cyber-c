@@ -1,3 +1,3 @@
 # String
 ### Passing as function arguments
-    `printf("Hello %s","Again\n");`
+    printf("Hello %s","Again\n");
