@@ -20,3 +20,16 @@ There are two arguments to be passed to `scanf()`
   scanf("%d",&val);
 ```
 Here, **&** in `&val` is used to refer to the pointer address of the variable `val`
+### Strings
+A string can be declared as a character array
+```c
+  char brother[6] = "Jacob";
+  char sister[] = "Sarah";
+```
+While receiving string values from the user, it's a good idea to limit the length to prevent the null terminator (`\0`) from being overwitten.
+```c
+  char name[10];
+  printf("Enter Your Name : \n");
+  scanf("%9s",name);
+```
+To access string utility functions, we have to add `include <string.h>` header to the file. Then we can use functions like `strlen` or `strcpy`
