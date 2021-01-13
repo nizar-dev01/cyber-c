@@ -1,2 +1,2 @@
-# Linux System Programming
-An attempt to learn the basics of Linux system programming
+# C
+An attempt to learn the basics of C programming language
