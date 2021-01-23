@@ -3,6 +3,7 @@
 
 #include <sys/types.h>
 #include <sys/socket.h>
+#include <unistd.h>
 
 #include <netinet/in.h>
 
@@ -25,12 +26,13 @@ int main(){
 
     if(conn_stat == -1){
         printf("Oops! Somehting went wrong while connecting to the server\n");
+    }else{
+        // Recieve data fro the server
+        char response[256];
+        recv(net_socket, &response, sizeof(response), 0);
+        printf("Server response : %s\n",response);
     }
 
-    // Recieve data fro the server
-    char response[256];
-    recv(net_socket, &response, sizeof(response), 0);
-    printf("Server response : %s",response);
 
     // Closing the socket
     close(net_socket);
